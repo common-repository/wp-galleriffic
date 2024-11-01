@@ -1,0 +1,131 @@
+/* galleriffic */
+.wp-galleriffic * {
+	color:#666;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align:center;
+	text-decoration:none;
+	outline:none;
+}
+
+.wp-galleriffic {
+	display:block;
+	max-width:960px;
+	position:relative;
+	margin:0.8em auto 0.8em auto;
+	font-size:14px;
+}
+
+.wp-galleriffic .slideshow-container,
+.wp-galleriffic .loading-container {
+	display:block;
+	position:absolute;
+	top:0;
+	width:100%;
+	margin:0 auto 0 auto;
+	overflow:hidden;
+}
+
+.wp-galleriffic .slideshow-container {
+	z-index:100;
+}
+
+.wp-galleriffic .loading-container {
+	z-index:99;
+}
+
+.wp-galleriffic .loading,
+.wp-galleriffic .slideshow {
+	width:560px;
+	line-height:560px;
+	height:560px;
+	margin:0 auto 0 auto;
+}
+
+.wp-galleriffic .slideshow img,
+.wp-galleriffic .loading img {
+	vertical-align:middle;
+	border:1px solid #666;
+}
+
+.wp-galleriffic .thumbs-container {
+	display:block;
+	position:absolute;
+	top:560px;
+	width:100%;
+	z-index:100;
+}
+
+.wp-galleriffic .thumbs-container ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.wp-galleriffic .thumbs-container ul li {
+	display:inline-block;
+	margin:0.1em;
+}
+
+.wp-galleriffic .thumbs-container ul li a {
+	background-color:#424747;
+	display:block;
+	padding:0.1em;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	-webkit-opacity: 0.6;
+	filter:alpha(opacity=60);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+.wp-galleriffic .thumbs-container ul li a:hover,
+.wp-galleriffic .thumbs-container ul li.selected a {
+	opacity: 0.99;
+	-moz-opacity: 0.99;
+	-khtml-opacity: 0.99;
+	-webkit-opacity: 0.99;
+	filter:alpha(opacity=99);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+}
+
+.wp-galleriffic .thumbs-container ul li .thumb-caption {
+	display:none;
+	visibility:hidden;
+}
+
+.wp-galleriffic .controls,
+.wp-galleriffic .main-caption {
+	position:absolute;
+	top:540px;
+	z-index:101;
+	height:1em;
+	max-width:40%;
+	overflow:hidden;
+}
+
+.wp-galleriffic .controls {
+	right:2em;
+	text-align:right;
+}
+
+.wp-galleriffic .main-caption {
+	left:2em;
+}
+
+.wp-galleriffic .pagination a,
+.wp-galleriffic .pagination .current {
+	display:inline-block;
+	padding:0.2em;
+	margin:0.4em;
+}
+
+.wp-galleriffic .pagination .current {
+	color:#222;
+}
